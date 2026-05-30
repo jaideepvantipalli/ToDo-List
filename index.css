@@ -1,0 +1,52 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.todo-input-grid,
+.todo-list{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.todo-list {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.todo-input-grid {
+    padding: 10px;
+    font-size: 16px;
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+
+.task-input,
+.due-date-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.add-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
