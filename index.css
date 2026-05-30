@@ -1,19 +1,27 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #291af435;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    color: #021202;
 }
 .todo-input-grid,
 .todo-list{
     display: grid;
-    grid-template-columns: 200px 150px 100px;
+    grid-template-columns: 200px 150px auto;
     gap: 10px;
     margin: 20px;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px dotted#e28c09;
+    border-radius: 10px;
+    background-color: #f8f9fa;
 }
 .todo-list {
     margin-left: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px dotted #ce1212;
 }
 
 .todo-input-grid {
@@ -29,6 +37,7 @@ body{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 40px;
+    border: 3px solid #ccc;
 }
 
 .add-button {
@@ -42,8 +51,8 @@ body{
 }
 
 .delete-button {
-    padding: 5px;
-    font-size: 14px;
+    padding: 13px;
+    font-size: 18px;
     background-color: #dc3545;
     color: white;
     border: none;
