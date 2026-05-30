@@ -10,16 +10,16 @@ body{
 .todo-input-grid,
 .todo-list{
     display: grid;
-    grid-template-columns: 200px 150px auto;
+    grid-template-columns: 200px 150px 100px;
     gap: 10px;
-    margin: 20px;
+    margin: 20px 500px;
     align-items: center;
     border: 1px dotted#e28c09;
     border-radius: 10px;
     background-color: #f8f9fa;
 }
 .todo-list {
-    margin-left: 20px;
+    margin: 20px 500px;
     padding: 10px;
     border: 1px dotted #ce1212;
 }
