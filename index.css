@@ -1,27 +1,27 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #291af435;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 .title{
     text-align: center;
     margin-top: 20px;
     color: #021202;
 }
+
 .todo-input-grid,
 .todo-list{
     display: grid;
     grid-template-columns: 200px 150px 100px;
     gap: 10px;
-    margin: 20px 500px;
+    width: min(900px, calc(100% - 40px));
+    margin: 20px auto;
     align-items: center;
-    border: 1px dotted#e28c09;
     border-radius: 10px;
     background-color: #f8f9fa;
-}
-.todo-list {
-    margin: 20px 500px;
-    padding: 10px;
-    border: 1px dotted #ce1212;
 }
 
 .todo-input-grid {
@@ -29,15 +29,22 @@ body{
     font-size: 16px;
     align-items: stretch;
     margin-bottom: 10px;
+    border: 1px dotted #e28c09;
+}
+
+.todo-list {
+    padding: 10px;
+    border: 1px dotted #ce1212;
 }
 
 .task-input,
 .due-date-input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
     border: 3px solid #ccc;
+    border-radius: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .add-button {
@@ -48,6 +55,7 @@ body{
     border: none;
     border-radius: 40px;
     cursor: pointer;
+    width: 100%;
 }
 
 .delete-button {
@@ -58,4 +66,41 @@ body{
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: 12px;
+    }
+
+    .todo-input-grid,
+    .todo-list {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .todo-input-grid {
+        gap: 12px;
+    }
+
+    .todo-list {
+        row-gap: 12px;
+    }
+
+    .task-input,
+    .due-date-input,
+    .add-button,
+    .delete-button {
+        width: 100%;
+    }
+
+    .delete-button {
+        font-size: 16px;
+        padding: 12px;
+    }
 }
